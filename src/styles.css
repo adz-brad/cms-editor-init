@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    @apply m-0 p-0;
+}
+
+html, body, #root {
+    @apply h-full;
+}
+
+.adz-live-editor {
+    @apply flex flex-col h-full w-full bg-neutral-200;
+}
+
+.adz-editor-menu {
+    @apply flex flex-row items-center h-[80px] w-full bg-gray-900 shadow-lg;
+}
+
+.adz-split-wrapper {
+    @apply flex flex-row grow;
+}
+
+.adz-split-editor {
+    @apply relative flex flex-col h-full w-1/2 p-2 bg-neutral-800 overflow-y-auto;
+}
+
+.adz-split-renderer {
+    @apply relative flex flex-col h-full w-1/2 overflow-y-auto;
+}
+
+.adz-button {
+    @apply text-xl font-medium px-8 py-4 mx-4 bg-neutral-100 rounded-md shadow-md hover:bg-indigo-100 transition-all;
+}
+
+.adz-init-editor-element {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+}
+
+.adz-init-renderer-element {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+}
+
+.adz-editor-parent {
+    @apply bg-neutral-200 rounded-md shadow-lg opacity-90 hover:opacity-100 mb-2;
+}
+
+.adz-editor-menubar {
+    @apply flex flex-row items-center h-[40px] m-2 select-none;
+}
+
+.adz-editor-menubar-buttons {
+    @apply flex flex-row items-center ml-auto;
+}
+
+.adz-editor-menubar-item {
+    @apply text-[24px] text-gray-900 cursor-pointer hover:text-sky-600 transition-all ml-1 select-none;
+}
+
+.adz-editor-item {
+    @apply flex flex-row items-center p-2 m-2 rounded-md shadow-md hover:shadow-lg transition-all bg-neutral-100 h-[50px]; 
+}
+
+.adz-editor-menubar-title{
+    @apply font-bold uppercase py-1 px-3 bg-gray-900/20 text-gray-900 rounded-md;
+}
+
+.adz-editor-item-icon {
+    @apply text-[40px] leading-none mx-auto hover:text-sky-600 transition-all cursor-pointer;
+}
+
+.adz-parent-editor-wrapper {
+    @apply h-full w-full bg-white overflow-y-auto rounded-md shadow-md;
+}
